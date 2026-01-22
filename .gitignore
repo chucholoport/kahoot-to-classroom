@@ -87,3 +87,5 @@ input/*
 !input/.gitkeep
 credentials/*
 !credentials/.gitkeep
+refs/*
+!refs/.gitkeep
