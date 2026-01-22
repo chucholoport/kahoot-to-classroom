@@ -83,9 +83,20 @@ dmypy.json
 *.cfg
 
 out
-input/*
-!input/.gitkeep
-credentials/*
-!credentials/.gitkeep
-refs/*
-!refs/.gitkeep
+
+reports/*
+!reports/.gitkeep
+!reports/README.md
+
+certs/*
+!certs/.gitkeep
+!certs/README.md
+
+data/*
+!data/.gitkeep
+!data/README.md
+
+config/*
+!config/.gitkeep
+!config/README.md
+!config/template.ini

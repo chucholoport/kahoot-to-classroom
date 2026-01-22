@@ -70,6 +70,17 @@ def translate_report(report: pd.DataFrame, total:int, reference: list) -> pd.Dat
     # Keep only relevant columns
     current = current[['Player', 'classroom', 'grade']].rename(columns={'Player': 'name'})
     
+    # Grade with 0 those who were not found
+    missing_students = [student for student in reference if student not in current['classroom'].values]
+    if missing_students:
+        missing_df = pd.DataFrame({
+            'name': ["Not Found"] * len(missing_students),
+            'classroom': missing_students,
+            'grade': [0.0] * len(missing_students)
+        })
+        current = pd.concat([current, missing_df], ignore_index=True)
+
+
     # Order according to reference
     current['classroom'] = pd.Categorical(
         current['classroom'],
