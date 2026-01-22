@@ -74,7 +74,7 @@ def translate_report(report: pd.DataFrame, total:int, reference: list) -> pd.Dat
     missing_students = [student for student in reference if student not in current['classroom'].values]
     if missing_students:
         missing_df = pd.DataFrame({
-            'name': ["Not Found"] * len(missing_students),
+            'name': [""] * len(missing_students),
             'classroom': missing_students,
             'grade': [0.0] * len(missing_students)
         })
