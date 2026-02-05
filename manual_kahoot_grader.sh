@@ -33,4 +33,4 @@ if [ -z "$CONFIG_FILE" ] || [ -z "$REPORT_FILE" ]; then
 fi
 
 # Run Python script in autograde mode
-python3 src/main.py -c "$CONFIG_FILE" -r "$REPORT_FILE" --autograde
+python3 src/main.py -c "$CONFIG_FILE" -r "$REPORT_FILE"

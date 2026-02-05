@@ -100,3 +100,9 @@ config/*
 !config/.gitkeep
 !config/README.md
 !config/template.ini
+
+tokens/*
+!tokens/.gitkeep
+!tokens/README.md
+
+src/interface/assets/*

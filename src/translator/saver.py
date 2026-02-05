@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-def save_report(report: os.path, reference: os.path, translation: pd.DataFrame) -> None:
+def save_report(report: os.path, reference: os.path, data: pd.DataFrame) -> None:
 
     # Build output name
     report_base = os.path.splitext(os.path.basename(report))[0]
@@ -10,5 +10,5 @@ def save_report(report: os.path, reference: os.path, translation: pd.DataFrame) 
     out_path = os.path.join("out", out_name)
 
     # Save csv
-    translation.to_csv(out_path, index=False, encoding="utf-8")
+    data.to_csv(out_path, index=False, encoding="utf-8")
     print(f"File saved in: {out_path}")

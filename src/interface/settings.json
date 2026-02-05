@@ -1,0 +1,67 @@
+{
+  "window": {
+    "title": "Kahoot → Classroom",
+    "size": "500x550",
+    "resizable": false,
+    "gradient_start": "#84BC6E",
+    "gradient_end": "#61ACEC"
+  },
+  "titlebar": {
+    "height": 100,
+    "fg_color": "white",
+    "close_text": "✕",
+    "close_font_family": "Raleway SemiBold",
+    "close_font_size": 24,
+    "close_offset_x": 40,
+    "close_offset_y": 50,
+    "logo_path": "src/interface/assets/15_upsrj.png",
+    "logo_x": 20,
+    "logo_y": 50,
+    "logo_height": 100
+  },
+  "frame": {
+    "padx": 20,
+    "pady": 20,
+    "anchor": "center",
+    "offset_x": 0,
+    "offset_y": 0,
+    "width": 360,
+    "height": 300,
+    "bg_color": "white"
+  },
+  "label": {
+    "font_family": "Raleway SemiBold",
+    "font_size": 12,
+    "bg_color": "white",
+    "fg_color": "black"
+  },
+  "dropdown": {
+    "font_family": "Raleway Medium",
+    "font_size": 11,
+    "bg_color": "#D9DADA",
+    "fg_color": "black",
+    "corner_radius": 12,
+    "max_chars": 20,
+    "fixed_width": 400
+  },
+  "button": {
+    "font_family": "Raleway SemiBold",
+    "font_size": 12,
+    "bg_color": "#457A7A",
+    "fg_color": "white",
+    "corner_radius": 12
+  },
+  "progress": {
+    "bg_color": "#61ACEC",
+    "trough_color": "white",
+    "corner_radius": 12
+  },
+  "status": {
+    "font_family": "Raleway SemiBold",
+    "font_size": 12,
+    "fg_color": "black",
+    "bg_color": "white",
+    "success_text": "¡Reporte convertido correctamente!",
+    "error_text": "Ocurrió un error durante la conversión"
+  }
+}

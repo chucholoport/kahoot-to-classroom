@@ -27,7 +27,7 @@ def load_config(path: str) -> Dict[str, Any]:
                 sys.stderr.write(f"error: missing key '{key}' in section [{section}] of {path}\n")
                 sys.exit(os.EX_CONFIG)
 
-            # Validate file paths for certs and data
+            # Validate file paths for certs, data, and repo
             if section == k2c.certs.name:
                 if not os.path.exists(value):
                     sys.stderr.write(f"error: credentials file not found: {value}\n")

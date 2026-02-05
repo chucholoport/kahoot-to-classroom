@@ -33,9 +33,17 @@ class kahoot_to_classroom:
         return {
             self.course.name: self.course.keys,
             self.certs.name: self.certs.keys,
-            self.data.name: self.data.keys,
+            self.data.name: self.data.keys
         }
 
     @property
     def student_list_key(self) -> str:
         return self.data.keys[0]
+
+    @property
+    def course_id_key(self) -> str:
+        return self.course.keys[0]
+
+    @property
+    def credentials_key(self) -> str:
+        return self.certs.keys[0]

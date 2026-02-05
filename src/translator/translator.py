@@ -22,7 +22,7 @@ def tokenize_text(text: str, sep: str=' '):
 def similarity(a: str, b: str) -> float:
     return difflib.SequenceMatcher(None, a, b).ratio()
 
-def translate_report(report: pd.DataFrame, total:int, reference: list) -> pd.DataFrame:
+def translate_kahoot_report(report: pd.DataFrame, total:int, reference: list) -> pd.DataFrame:
 
     # Expected: real names in reference list
     expected = [tokenize_text(preprocess_text(line)) for line in reference]

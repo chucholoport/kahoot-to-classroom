@@ -1,0 +1,21 @@
+{
+  "labels": {
+    "config": {
+      "text": "Seleccione un grupo"
+    },
+    "report": {
+      "text": "Seleccione un reporte"
+    }
+  },
+  "dropdowns": {
+    "config": {
+      "format": true
+    },
+    "report": {
+      "format": false
+    }
+  },
+  "buttons": {
+    "convert": "Convertir Reporte"
+  }
+}

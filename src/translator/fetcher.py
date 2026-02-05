@@ -18,7 +18,7 @@ def fetch_kahoot_report(report: path) -> pd.DataFrame:
     
     return total, data
 
-def fetch_classroom_reference(reference: path) -> list:
+def fetch_classroom_reference(reference: path) -> pd.DataFrame:
     
     # Read text file reference as list of lines
     data = [item.strip() for item in open(reference).readlines()]
